@@ -1,0 +1,66 @@
+body {
+    font-family: 'Ubuntu';
+}
+
+.hero {
+    background-image: url(image/background.svg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-nav {
+    margin-right: 100px;
+}
+
+nav .navbar-nav li a {
+    color: white !important;
+}
+
+
+.nav-link {
+    margin-right: 25px;
+    font-size: 16px;
+    margin-top: 15px;
+    /* border-bottom: solid 1px red; */
+  }
+
+
+
+/* .nav-item {
+    border-bottom: solid 1px red;
+} */
+
+.btn-nav {
+    margin-right: 80px;
+    margin-top: 19px;
+}
+
+.nav-btn {
+  color: #ffffff;
+  background-color: #2196F3;
+  padding: 05px 35px !important;
+  font-size: 16px !important;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: none;
+}
+
+
+
+.nav-btn:hover {
+    background-color: #28B446;
+}
+
+.hero-text {
+    text-align: center;
+    margin-top: 8rem;
+    color: #ffffff;
+}
+
+
+
+
+
+
