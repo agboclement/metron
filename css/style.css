@@ -1,6 +1,6 @@
 /*
-Blue color: #2196F3;
-Green color: #
+Blue color: #2196F3
+Green color: #28B446
 
 */
 
@@ -197,12 +197,32 @@ nav .navbar-nav li a {
 
 /* DESTIN */
 
-.outer-container {
-    border: 1px solid #000;
-    height: 12rem;
-    margin-top: 20px;
-    width: 35rem;
-    margin-left: 17rem;
+.card {
+    width: 25rem;
+}
+
+.card-box {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.dest-text {
+    color: #52616B;
+    font-size: 15px;
+    font-weight: 100px;
+    margin-top: 12px;
+}
+
+.dest-btn {
+    color: #ffffff;
+  background-color: #2196F3;
+  padding: 05px 15px !important;
+  font-size: 16px !important;
+  /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 15px rgba(0, 0, 0, 0.12); */
+  border-radius: 4px;
+  border: none;
+  margin-left: 50px;
 }
 
 /* .destin-wrap {
@@ -289,8 +309,6 @@ footer {
 
 .footer-input {
     border: 1px solid#2196F3;
-    /* height: 03rem; */
-    /* width: 11rem; */
     padding: 11px 50px;
     color: #ffffff;
     background-color: #2196F3;
