@@ -228,3 +228,28 @@ nav .navbar-nav li a {
     margin-top: 30px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 15px rgba(0, 0, 0, 0.12);
 }
+
+.why-photo {
+    text-align: center;
+}
+
+.why-icon {
+    width: 3rem;
+    margin-top: 55px;
+}
+
+.why-content {
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+.why-text {
+    font-size: 17px;
+}
+
+.why-paragraph {
+    font-size: 12px;
+    color: rgb(104, 104, 104);
+}
+
