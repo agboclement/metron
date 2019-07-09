@@ -48,11 +48,12 @@
                     </div>
                 </nav>
             </div>
-                <div class="hero-text">
-                    <h1 class="hero-header">Online Train ticket booking made easy!</h1>
-                    <p class="hero-paragraph">Find cheap train tickets and pay securedly.</p>
-                </div>
-                <div class="choose-trip">
+            <div class="hero-text">
+                <h1 class="hero-header">Online Train ticket booking made easy!</h1>
+                <p class="hero-paragraph">Find cheap train tickets and pay securedly.</p>
+            </div>
+
+            <div class="choose-trip">
                     <div class="row">
                          <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 dropdowns">
                                 <div class="dropdown">
@@ -106,6 +107,23 @@
                             </div>
                         </div>
                     </div>
+                    <div className="row">
+                            <Form inline class="form-inline">
+                                <FormGroup class="mb-2 mr-sm-2 mb-sm-0 form-group">
+                                    <Label for="exampleEmail" class="mr-sm-5"></Label>
+                                    <Input type="email" name="email" id="exampleEmail" placeholder="From" class="form-input" />
+                                </FormGroup>
+                                <FormGroup class="mb-2 mr-sm-2 mb-sm-0 form-group">
+                                    <Label for="examplePassword" class="mr-sm-4"></Label>
+                                    <Input type="password" name="password" id="examplePassword" placeholder="To" class="form-input" />
+                                </FormGroup>
+                                <FormGroup class="mb-2 mr-sm-2 mb-sm-0 form-group">
+                                    <Label for="examplePassword" class="mr-sm-4"></Label>
+                                    <Input type="password" name="password" id="examplePassword" placeholder="Date of journey" class="form-input" />
+                                </FormGroup>
+                                <Button class="form-btn">Search</Button>
+                            </Form>
+                        </div>
                 </div>    
         </div>    
 
