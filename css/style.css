@@ -253,3 +253,50 @@ nav .navbar-nav li a {
     color: rgb(104, 104, 104);
 }
 
+/* FOOTER */
+
+footer {
+    background-color: #000000;
+    height: 12rem;
+}
+
+.footer-container {
+    padding-top: 40px;
+}
+
+.logo-footer {
+    
+}
+
+.footer-text {
+    color: #ffffff;
+}
+
+.footer-heading {
+    font-size: 25px;
+}
+
+.footer-paragraph {
+    font-size: 12px;
+}
+
+
+
+.form-control-lg{
+    border-radius: 0px !important;
+    width: 22rem; 
+}
+
+.footer-input {
+    border: 1px solid#2196F3;
+    /* height: 03rem; */
+    /* width: 11rem; */
+    padding: 11px 50px;
+    color: #ffffff;
+    background-color: #2196F3;
+}
+
+
+
+
+
