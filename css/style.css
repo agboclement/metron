@@ -18,9 +18,13 @@ body {
     background-position: center;
 }
 
-.navbar-nav {
+/* #navbarNav {
+    margin-right: 25px;
+} */
+
+/* .navbar-nav {
     margin-right: 100px;
-}
+} */
 
 nav .navbar-nav li a {
     color: white !important;
@@ -28,7 +32,7 @@ nav .navbar-nav li a {
 
 
 .nav-link {
-    margin-right: 25px;
+    margin-right: 20px;
     font-size: 16px;
     margin-top: 15px;
     /* border-bottom: solid 1px red; */
@@ -41,7 +45,7 @@ nav .navbar-nav li a {
 } */
 
 .btn-nav {
-    margin-right: 80px;
+    /* margin-right: 120px; */
     margin-top: 19px;
 }
 
@@ -193,11 +197,34 @@ nav .navbar-nav li a {
 
 /* DESTIN */
 
-.destin-wrap {
+.outer-container {
     border: 1px solid #000;
-    height: 10rem;
+    height: 12rem;
     margin-top: 20px;
+    width: 35rem;
+    margin-left: 17rem;
+}
+
+/* .destin-wrap {
+    border: 1px solid #000;
+    height: 12rem;
+    margin-top: 20px;
+    width: 35rem;
+    margin-left: 17rem;
+    display: flex;
+} */
+
+.inner-container {
+    display: flex;
 }
 
 
+/* WHY */
 
+
+.why-box {
+    /* border: 1px solid #000; */
+    height: 16rem;
+    margin-top: 30px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 15px rgba(0, 0, 0, 0.12);
+}
