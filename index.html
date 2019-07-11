@@ -53,7 +53,7 @@
                 <p class="hero-paragraph">Find cheap train tickets and pay securedly.</p>
             </div>
 
-            <div class="choose-trip">
+            <!-- <div class="choose-trip lg-12 md-6 sm-4 xs-3">
                     <div class="row">
                          <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 dropdowns">
                                 <div class="dropdown">
@@ -107,24 +107,26 @@
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    <div class="row form-block">
+                        <div class="well well lg-12 md-6 sm-4 xs-3">
                             <Form inline class="form-inline">
-                                <FormGroup class="mb-2 mr-sm-2 mb-sm-0 form-group">
-                                    <Label for="exampleEmail" class="mr-sm-5"></Label>
+                                <div class="md-3 sm-2 form-group">
+                                    
                                     <Input type="email" name="email" id="exampleEmail" placeholder="From" class="form-input" />
-                                </FormGroup>
-                                <FormGroup class="mb-2 mr-sm-2 mb-sm-0 form-group">
-                                    <Label for="examplePassword" class="mr-sm-4"></Label>
+                                </div>
+                                <div class="md-3 sm-2 form-group">
+                                    
                                     <Input type="password" name="password" id="examplePassword" placeholder="To" class="form-input" />
-                                </FormGroup>
-                                <FormGroup class="mb-2 mr-sm-2 mb-sm-0 form-group">
-                                    <Label for="examplePassword" class="mr-sm-4"></Label>
+                                </div>
+                                <div class="md-3 sm-2 form-group">
+                                    
                                     <Input type="password" name="password" id="examplePassword" placeholder="Date of journey" class="form-input" />
-                                </FormGroup>
+                                </div>
                                 <Button class="form-btn">Search</Button>
                             </Form>
+                        </div>    
                         </div>
-                </div>    
+                </div>     -->
         </div>    
 
 
@@ -137,12 +139,12 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="trip-header">4 easy steps to book your tickets</h1>
+                    <h1 class="trip-header mb-lg-5 mb-md-4 mb-sm-4 mb-3">4 easy steps to book your tickets</h1>
                 </div>
             </div>
 
         <div class="row">
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="trip-box">
                     <div class="trip-photo">
                      <img src="asset/icons/Group 2.svg" class="trip-icon" alt="Trip-Icon">
@@ -154,7 +156,7 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6">
                     <div class="trip-box">
                         <div class="trip-photo">
                             <img src="asset/icons/Group 2 (1).svg" class="trip-icon" alt="Trip-Icon">
@@ -166,7 +168,7 @@
                     </div>
             </div>
 
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6">
                     <div class="trip-box">
                         <div class="trip-photo">
                             <img src="asset/icons/Group 2 (2).svg" class="trip-icon" alt="Trip-Icon">
@@ -178,7 +180,7 @@
                     </div>
                 </div>
 
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6">
                     <div class="trip-box">
                         <div class="trip-photo">
                             <img src="asset/icons/Group 2 (3).svg" class="trip-icon" alt="Trip-Icon">
@@ -201,7 +203,8 @@
                 </div>
             </div>
             
-                <div class="row outer-container">
+            <div class="row">
+                    <div class="col lg-08 md-06 sm-04 outer-container">
                     <div class="card-group">
                         <div class="card">
                                 <div class="card-body">
@@ -254,6 +257,7 @@
                                 </div>
                     </div>
                 </div>
+            </div>
             
         </div>
     </section>
@@ -266,7 +270,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="why-box">
                         <div class="why-photo">
                             <img src="asset/icons/why1.svg" class="why-icon" alt="Trip-Icon">
@@ -278,7 +282,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6">
                         <div class="why-box">
                             <div class="why-photo">
                                 <img src="asset/icons/why2.svg" class="why-icon" alt="Trip-Icon">
@@ -290,7 +294,7 @@
                         </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-lg-4 col-md-6">
                         <div class="why-box">
                             <div class="why-photo">
                                 <img src="asset/icons/why3.svg" class="why-icon" alt="Trip-Icon">
@@ -308,23 +312,25 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container foot">
             <div class="footer-container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 footer-logo">
                     <img src="asset/images/metron.svg" class="logo-footer" alt="Logo">
                 </div>
 
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="footer-box">
-                        <div class="footer-text">
+                        <div class="footer-text mb-md-4 mb-sm-3 mb-3">
                             <h1 class="footer-heading">Sign Up for Exclusive Offers</h1>
                             <p class="footer-paragraph">Receive special offers and get notifications on our new releases </p>
                         </div>
+                        <div class="form-right">
                         <form class="form-inline">
                             <input class="form-control-lg forn-con" type="Your Email" placeholder="Your email " aria-label="Your Email">
                             <a class="footer-input" href="#">Join Now</a>
                         </form>
+                    </div>
                     </div>
                 </div>
             </div>
