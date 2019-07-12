@@ -1,4 +1,18 @@
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
+
+
+
+
 var adult = 0;
+function newFunction() {
+    $(function () {
+        $("#datepicker").datepicker();
+    });
+}
+
 function decreaseAdult() {
     document.getElementById('count-adult').value =--adult;
 }
