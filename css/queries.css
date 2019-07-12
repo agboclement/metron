@@ -72,6 +72,13 @@
     }
 }
 
+@media(max-width:320px){
+
+    .container{
+        width:400px;
+    }
+}
+
 
 
 /* @media (min-width: 576px) {

@@ -39,11 +39,11 @@
                                 <a class="nav-link" href="#">Print ticket</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Create account</a>
+                                <a class="nav-link" href="signup.html">Create account</a>
                             </li>
                         </ul>
                         <div class="btn-nav">
-                         <Button size="sm" class="nav-btn">Sign In</Button>
+                        <a href="signin.html"> <Button size="sm" class="nav-btn">Sign In</Button></a>
                         </div>
                     </div>
                 </nav>
@@ -53,14 +53,16 @@
                 <p class="hero-paragraph">Find cheap train tickets and pay securedly.</p>
             </div>
 
-            <!-- <div class="choose-trip lg-12 md-6 sm-4 xs-3">
+            <div class="choose-trip lg-12 md-6 sm-4 xs-3">
                     <div class="row">
                          <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 dropdowns">
                                 <div class="dropdown">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         One-way
+                                       
                                     </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                   
+                                    <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
                                         <a class="dropdown-item" href="#">One-way</a>
                                         <a class="dropdown-item" href="#">Return</a>
                                    </div>
@@ -69,9 +71,9 @@
                         <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 dropdowns">
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    1 Passenger
+                                    Passenger
                                 </button>
-                                <div class="dropdown-box">
+                                <div class="dropdown-box ">
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <div class="row-12 dropdown-block">
                                             <div class="col-6">
@@ -79,11 +81,11 @@
                                             </div>    
                                             <div class="col-6 dropdown-btn-container">
                                                 <div class="dropdown-btn-block">
-                                                    <button class="decre-btn"><img class="decre-img" src="asset/images/Decrebtn.svg" /></button>
+                                                    <button class="decre-btn"><img class="decre-img" onclick= "decreaseAdult();" src="asset/images/Decrebtn.svg" /></button>
                                                 
-                                                    <span class="count-num">1</span>   
+                                                    <input type="text" id="count-adult" value="1"></input>   
                                                         
-                                                    <button class="decre-btn"><img class="incre-img" src="asset/images/Increbtn.svg" /></button>
+                                                    <button class="incre-btn" ><img class="incre-img" onclick= "increaseAdult();" src="asset/images/Increbtn.svg" /></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -94,11 +96,10 @@
                                                 </div>    
                                                 <div class="col-6 dropdown-btn-container">
                                                     <div class="dropdown-btn-block">
-                                                        <button onclick="subone()" type="button" class="decre-btn" id="btnincre"><img class="decre-img" src="asset/images/Decrebtn.svg" /></button>
-                                                    
-                                                        <span class="count-num">1</span>   
+                                                        <button onclick="subone()" type="button" class="decre-btn" id="btnincre"><img class="decre-img" onclick= "decreaseChildren();" src="asset/images/Decrebtn.svg" /></button>
+                                                        <input type="text" id="count-child" value="1"></input>    
                                                             
-                                                        <button class="decre-btn"><img class="incre-img" src="asset/images/Increbtn.svg" /></button>
+                                                        <button class="decre-btn"><img class="incre-img"onclick= "increaseChildren();" src="asset/images/Increbtn.svg" /></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -126,7 +127,7 @@
                             </Form>
                         </div>    
                         </div>
-                </div>     -->
+                </div>    
         </div>    
 
 
@@ -351,6 +352,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
+
+
+
+        <script src="script.js"></script>
 </body>
 
 </html>
