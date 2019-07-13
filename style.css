@@ -181,6 +181,7 @@ line-height: 18px;
     position: absolute;
     bottom:23px;
     left: 24.64%;
+    text-decoration:none;
   }
   .google{
     height:69px;
@@ -221,6 +222,16 @@ margin-bottom:21px;
      right:40px;
      top:290px;
  }
+ .switch-link{
+   color:#2196F3;
+   
+   font-weight: 600;
+ }
+ .remove{
+  text-decoration:none;
+ }
+
+
 
  /* Media query begins here */
  @media(max-width:425px){
