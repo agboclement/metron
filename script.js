@@ -1,4 +1,17 @@
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+
+  function newFunction() {
+    $(function () {
+        $("#datepicker").datepicker();
+    });
+}
+
+
+
 var adult = 0;
+
 
 
 
