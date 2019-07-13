@@ -1,6 +1,11 @@
 var adult = 0;
+
+
+
 function decreaseAdult() {
+
     document.getElementById('count-adult').value =--adult;
+    
 }
 
 
