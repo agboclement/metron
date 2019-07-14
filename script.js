@@ -3,6 +3,25 @@ $(document).on('click', 'nav .navbar-nav li', function(){
 });
 
 
+// SHOW RETURN
+
+function show_return() {
+    var select_box = $('#inputState').val();
+    if(select_box == 'return')
+    {
+        $('#form2').show();
+        $('#form1').hide();
+    }
+    else
+    {
+        $('#form2').hide();
+        $('#form1').show();
+    }
+
+    return false
+}
+
+
 // DATEPICKER
 
 $( function() {
@@ -18,10 +37,6 @@ $( function() {
 
 
 var adult = 0;
-
-
-
-
 function decreaseAdult() {
 
     document.getElementById('count-adult').value =--adult;

@@ -59,15 +59,17 @@
                     <div class="row">
                          <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 dropdowns">
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         One-way
                                        
-                                    </button>
+                                    </button> -->
                                    
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">One-way</a>
-                                        <a class="dropdown-item" href="#">Return</a>
-                                   </div>
+                                    <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> -->
+                                        <select id="inputState" onchange="show_return()" class="form-control">
+                                            <option value="On">One-way</option>
+                                            <option value="return">Return</option>
+                                        </select>
+                                   <!-- </div> -->
                                 </div>
                         </div>
                         <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 dropdowns">
@@ -111,7 +113,7 @@
                         </div>
                     </div>
                     <div class="row form-block">
-                        <div class="well well lg-12 md-6 sm-4 xs-3">
+                        <div class="well well lg-12 md-6 sm-4 xs-3" id="form1">
                             <Form inline class="form-inline">
                                 <div class="md-3 sm-2 form-group">
                                     
@@ -124,6 +126,30 @@
                                 <div class="md-3 sm-2 form-group">
                                     
                                     <Input type="text"  id="datepicker" placeholder="Date of journey" class="form-input" />
+                                </div>
+                                <Button class="form-btn">Search</Button>
+                            </Form>
+                        </div>    
+
+                        <div class="well well lg-12 md-6 sm-4 xs-3" id="form2">
+                            <Form inline class="form-inline">
+                                <div class="md-3 sm-2 form-group col-md-3">
+                                    
+                                    <Input type="text" name="email" id="exampleEmail" placeholder="From" class="form-input" />
+                                </div>
+                                <div class="md-3 sm-2 form-group col-md-3">
+                                    
+                                    <Input type="text" name="password" id="examplePassword" placeholder="To" class="form-input" />
+                                </div>
+                                
+                                <div class="md-3 sm-2 form-group col-md-2">
+                                    
+                                    <Input type="text"  id="datepicker" placeholder="Date of journey" class="form-input" />
+                                </div>
+
+                                <div class="md-3 sm-2 form-group col-md-2">
+                                    
+                                    <Input type="text"  id="datepicker" placeholder="Date of return" class="form-input" />
                                 </div>
                                 <Button class="form-btn">Search</Button>
                             </Form>
@@ -166,7 +192,7 @@
                         </div>
                         <div class="inner-text">
                          <h1 class="trip-text">FIND TRAIN TICKETS</h1>
-                         <p class="trip-paragraph">A selection of train destinations in a few clicks</p>
+                         <p class="trip-paragraph">A selection of train destinations in a <br>few clicks</p>
                         </div>
                     </div>
             </div>
@@ -178,7 +204,7 @@
                         </div>
                         <div class="inner-text">
                             <h1 class="trip-text">BOOK AND PAY</h1>
-                            <p class="trip-paragraph">Choose the cheapest train tickets and pay securedly</p>
+                            <p class="trip-paragraph">Choose the cheapest train tickets and <br>pay securedly</p>
                         </div>
                     </div>
                 </div>
@@ -280,7 +306,7 @@
                         </div>
                         <div class="why-content">
                             <h1 class="why-text">BOOK AND TRAVEL WITH EASE</h1>
-                            <p class="why-paragraph">CEnjoy smooth journeys when you use tickets on your phone to skip station queues.</p>
+                            <p class="why-paragraph">Enjoy smooth journeys when you use tickets on <br>your phone to skip station queues.</p>
                         </div>
                     </div>
                 </div>
