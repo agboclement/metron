@@ -34,12 +34,35 @@ $( function() {
     });
 }
 
+$( function() {
+    $( "#datepickergo" ).datepicker();
+  } );
+
+  function newFunction() {
+    $(function () {
+        $("#datepickergo").datepicker();
+    });
+}
+
+$( function() {
+    $( "#datepickerreturn" ).datepicker();
+  } );
+
+  function newFunction() {
+    $(function () {
+        $("#datepickerreturn").datepicker();
+    });
+}
 
 
-var adult = 0;
+
+var adult = 1;
 function decreaseAdult() {
-
-    document.getElementById('count-adult').value =--adult;
+    if(adult > 0){
+            document.getElementById('count-adult').value =--adult;
+    } else{
+        adult=1;
+    }
     
 }
 
@@ -50,7 +73,11 @@ function increaseAdult() {
 
 var child = 0;
 function decreaseChildren() {
-    document.getElementById('count-child').value =--child;
+    if(child > 0){
+        document.getElementById('count-child').value =--child;
+    } else{
+        chlld= 0;
+    }
 }
 
 

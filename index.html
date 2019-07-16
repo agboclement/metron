@@ -101,7 +101,7 @@
                                                 <div class="col-6 dropdown-btn-container">
                                                     <div class="dropdown-btn-block">
                                                         <button type="button" class="decre-btn" id="child-dec" id="btnincre"><img class="decre-img" onclick= "decreaseChildren();" src="asset/images/Decrebtn.svg" /></button>
-                                                        <input type="text" id="count-child" value="1"></input>    
+                                                        <input type="text" id="count-child" value="0"></input>    
                                                             
                                                         <button class="incre-btn" id="child-inc"><img class="incre-img"onclick= "increaseChildren();" src="asset/images/Increbtn.svg" /></button>
                                                     </div>
@@ -130,28 +130,29 @@
                                 <Button class="form-btn">Search</Button>
                             </Form>
                         </div>    
-
+                    </div>  
+                    <div class="row form-block">
                         <div class="well well lg-12 md-6 sm-4 xs-3" id="form2">
                             <Form inline class="form-inline">
-                                <div class="md-3 sm-2 form-group col-md-3">
+                                <div class="col form3">
+                                <div class="form-group col-sm-3">
                                     
-                                    <Input type="text" name="email" id="exampleEmail" placeholder="From" class="form-input" />
+                                    <Input type="text" name="email" id="exampleEmail" placeholder="From" class="form-input" id="form_block" />
                                 </div>
-                                <div class="md-3 sm-2 form-group col-md-3">
+                                <div class="form-group col-sm-3">
                                     
-                                    <Input type="text" name="password" id="examplePassword" placeholder="To" class="form-input" />
+                                    <Input type="text" name="password" id="examplePassword" placeholder="To" class="form-input" id="form_block"/>
                                 </div>
                                 
-                                <div class="md-3 sm-2 form-group col-md-2">
+                                <div class=" col-sm-4" id="from-grp">
                                     
-                                    <Input type="text"  id="datepicker" placeholder="Date of journey" class="form-input" />
+                                    <Input type="text"  id="datepickergo" placeholder="Date of journey" class="form-input-block" id="form_block" />
+                                    <Input type="text"  id="datepickerreturn" placeholder="Date of return" class="form-input-block" id="form_block" />
                                 </div>
 
-                                <div class="md-3 sm-2 form-group col-md-2">
-                                    
-                                    <Input type="text"  id="datepicker" placeholder="Date of return" class="form-input" />
-                                </div>
-                                <Button class="form-btn">Search</Button>
+                                <Button class="form-btn-2">Search</Button>
+                            </div>
+                            
                             </Form>
                         </div>    
                         </div>
