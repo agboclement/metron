@@ -15,13 +15,13 @@
                 
                 </div>
                 <div class="col2-signin">
-                    <form>
+                    <form id="signinform">
                     <h2 class="h2-signin">Sign In</h2>
                     
                     <label>E-MAIL</label>
-                    <input type="email" name="email" class="email-signin" placeholder="your email goes here" required>
+                    <input type="email" name="email" id="login-email" class="email-signin" placeholder="your email goes here" required>
                     <label>PASSWORD</label>
-                    <input type="password" name="password" class="password-signin" placeholder="Create your password" required>
+                    <input type="password" name="password" id= "login-password" class="password-signin" placeholder="Create your password" required>
                 
                 
                     <label class="container">Remember log in.
@@ -41,6 +41,36 @@
                 
                 </div>
     
-                <script src="auth.js"></script>
+              <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCxg3bTVPkVCMHCmANREUtlZ_Hc-lg5bUg",
+    authDomain: "metron-804b3.firebaseapp.com",
+    databaseURL: "https://metron-804b3.firebaseio.com",
+    projectId: "metron-804b3",
+    
+    appId: "1:554771170726:web:f95b3d446b057119"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // make auth and firestore references
+  const auth=firebase.auth();
+  const db=firebase.firestore();
+
+  // update firestore settings
+//   db.settings ({timestampsInSnapshots:true});
+</script>
+ <script src="auth.js"></script>
+    
+</body>
+</html>
 </body>
 </html>
