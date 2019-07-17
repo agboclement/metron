@@ -22,7 +22,7 @@
         
         
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
                     <a class="navbar-brand" href="#">
                         <img src="asset/images/metron.black.svg" class="logo" alt="Logo">
                     </a>
@@ -48,89 +48,78 @@
                     </div>
                 </nav>
             </div>
-            <hr></hr>
+        
+            
 
 
-                <div class="choose-trip lg-12 md-6 sm-4 xs-3">
-                    <div class="row">
-                         <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 dropdowns">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        One-way
-                                       
-                                    </button>
-                                   
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">One-way</a>
-                                        <a class="dropdown-item" href="#">Return</a>
-                                   </div>
-                                </div>
-                        </div>
-                        <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 dropdowns">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                   <span id="total"></span> Passenger
-                                </button>
-                                <div class="dropdown-box ">
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <div class="row-12 dropdown-block">
-                                            <div class="col-6">
-                                                <h4 class="dropdown-head">Adult(18+)</h4>
-                                            </div>    
-                                            <div class="col-6 dropdown-btn-container">
-                                                <div class="dropdown-btn-block">
-                                                    <button class="decre-btn" id="adult-dec"><img class="decre-img" onclick= "decreaseAdult();" src="asset/images/Decrebtn.svg" /></button>
-                                                
-                                                    <input type="text" id="count-adult" value="1"></input>   
-                                                        
-                                                    <button class="incre-btn" id="adult-inc" ><img class="incre-img" onclick= "increaseAdult();" src="asset/images/Increbtn.svg" /></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr></hr>
-                                        <div class="row-12 dropdown-block">
-                                                <div class="col-6">
-                                                    <h4 class="dropdown-head">Children(0-17)</h4>
-                                                </div>    
-                                                <div class="col-6 dropdown-btn-container">
-                                                    <div class="dropdown-btn-block">
-                                                        <button type="button" class="decre-btn" id="child-dec" id="btnincre"><img class="decre-img" onclick= "decreaseChildren();" src="asset/images/Decrebtn.svg" /></button>
-                                                        <input type="text" id="count-child" value="1"></input>    
-                                                            
-                                                        <button class="incre-btn" id="child-inc"><img class="incre-img"onclick= "increaseChildren();" src="asset/images/Increbtn.svg" /></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row form-block">
+                
+                    <!-- <div class="row form-block">
                         <div class="well well lg-12 md-6 sm-4 xs-3">
                             <Form inline class="form-inline">
-                                <div class="md-3 sm-2 form-group">
+                               
+                                <div class="form-group col-md-3">
                                     
-                                    <Input type="email" name="email" id="exampleEmail" placeholder="From" class="form-input" />
+                                    <Input type="text" name="email" id="exampleEmail" placeholder="From" class="form-input" id="form_block" />
                                 </div>
-                                <div class="md-3 sm-2 form-group">
+                                <div class="form-group col-md-2">
                                     
-                                    <Input type="password" name="password" id="examplePassword" placeholder="To" class="form-input" />
+                                    <Input type="text" name="password" id="examplePassword" placeholder="To" class="form-input" id="form_block"/>
                                 </div>
-                                <div class="md-3 sm-2 form-group">
+                                
+                                <div class="form-group col-md-4" >
                                     
-                                    <Input type="password" name="password" id="examplePassword" placeholder="Date of journey" class="form-input" />
+                                    <Input type="text"  id="datepickergo" placeholder="Date of journey" class="form-input-block" id="form_block" />
+                                    <Input type="text"  id="datepickerreturn" placeholder="Date of return" class="form-input-block" id="form_block" />
                                 </div>
-                                <Button class="form-btn">Search</Button>
+                                <div class="form-group col-md-3">
+                                    
+                                    <Input type="text" name="email" id="exampleEmail" placeholder="From" class="form-input" id="form_block" />
+                                </div>
+                                <Button class="form-btn-2">Search</Button>
+                           
+                            
                             </Form>
                         </div>    
-                        </div>
-                </div>    
-         
-
-
-        
+                        </div> -->
     </header>
+
+    <hr></hr>
+    <section class="section section-trip">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+    <div class="choose-trip lg-12 md-6 sm-4 xs-3">  
+          
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    
+                    <input type="text" class="form-control" id="inputCity" placeholder="To">
+                  </div>
+                  <div class="form-group col-md-2">
+                    
+                    <input type="text" class="form-control" id="inputCity" placeholder="To">
+                  </div>
+                  <div class="form-group col-md-2" id="form-input">
+                    
+                    <input type="text" class="form-control" id="inputZip" placeholder="To">
+                    
+                    <input type="text" class="form-control" id="inputZip" placeholder="To">
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    
+                    <input type="text" class="form-control" id="inputCity" placeholder="To">
+                  </div>
+                 
+            </div>
+            <Button class="form-btn-2">Search</Button>
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>  
+</section>  
     <!-- Header End -->
 
     <!-- main -->
@@ -144,35 +133,7 @@
     
     <!-- Main End -->
 
-    <!-- Footer -->
-    <footer>
-        <div class="container foot">
-            <div class="footer-container">
-            <div class="row">
-                <div class="col-lg-6 footer-logo">
-                    <img src="asset/images/metron.svg" class="logo-footer" alt="Logo">
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="footer-box">
-                        <div class="footer-text mb-md-4 mb-sm-3 mb-3">
-                            <h1 class="footer-heading">Sign Up for Exclusive Offers</h1>
-                            <p class="footer-paragraph">Receive special offers and get notifications on our new releases </p>
-                        </div>
-                        <div class="form-right">
-                        <form class="form-inline">
-                            <input class="form-control-lg forn-con" type="Your Email" placeholder="Your email " aria-label="Your Email">
-                            <a class="footer-input" href="#">Join Now</a>
-                        </form>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </footer>
-    <!-- Footer End -->
-
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
